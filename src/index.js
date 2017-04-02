@@ -53,6 +53,11 @@ module.exports = {
     }],
 
     /**
+     * @see http://eslint.org/docs/rules/no-continue
+     */
+    'no-continue' : 'off',
+
+    /**
      * @see http://eslint.org/docs/rules/no-prototype-builtins
      */
     'no-prototype-builtins' : 'off',
