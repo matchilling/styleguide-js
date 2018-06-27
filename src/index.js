@@ -3,8 +3,12 @@ module.exports = {
     'eslint-config-airbnb-base'
   ].map(require.resolve),
   globals : {
-    it       : true,
-    describe : true
+    after      : true,
+    afterEach  : true,
+    before     : true,
+    beforeEach : true,
+    it         : true,
+    describe   : true
   },
   rules : {
     /**
@@ -79,6 +83,11 @@ module.exports = {
      * @see http://eslint.org/docs/rules/one-var
      */
     'one-var' : ['warn', 'always'],
+
+    /**
+     * @see http://eslint.org/docs/rules/prefer-rest-params
+     */
+    'prefer-rest-params' : 'off',
 
     /**
      * @see http://eslint.org/docs/rules/quotes
